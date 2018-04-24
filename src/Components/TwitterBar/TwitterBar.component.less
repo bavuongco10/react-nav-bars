@@ -1,0 +1,38 @@
+@twitter-color:  rgba(85,172,238 ,1);
+
+.twitter {
+  display: flex;
+  list-style: none;
+  margin: 12px 24px;
+  border: 1px solid rgba(238,238,238 ,1);
+  color: rgba(117,117,117 ,1);
+  border-radius: 8px;
+  padding: 12px 24px;
+  box-shadow: 5px 10px 20px -16px black;
+  li {
+    display: flex;
+    cursor: pointer;
+    margin-right: 8px;
+    &:hover {
+      color: @twitter-color;
+    }
+    span {
+      margin-left: 4px;
+    }
+  }
+  .twitter__icon {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.3em;
+    color: @twitter-color;
+  }
+  .twitter_tweet {
+    margin-right: 0;
+    button {
+      background: @twitter-color;
+      border-radius: 8px;
+      font-size: 0.8em;
+      color: white;
+    }
+  }
+}
